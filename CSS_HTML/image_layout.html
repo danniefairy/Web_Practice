@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	img {
+	  display: block;/*預設為inline 但由於把字視為字母所以下方會有留空 因此改用block可去除*/
+	  width: 100%;  /*圖片寬度服貼容器*/
+	  height: auto;
+	}
+
+	.container {
+	  width: 700px;
+	  margin: 0 auto;
+	}
+
+	.row{
+	  /*可用來控制圖片占版面大小*/
+	  margin:0 -50px;/*上下 左右*/
+	}
+
+	.clearfix {
+	  clear: both;
+	}
+
+	section {/*整排畫面的區域*/
+	  background-color: gray;
+	}
+
+	section.light {
+	  background-color: #ccc;
+	}
+
+	.work {
+	  float: left;
+	  padding: 0px 5px;          /*自己巷內縮就不必考慮width大小*/
+	  width: 33.3333333%;
+	  box-sizing: border-box;
+	}
+</style>
+<body>
+	<section>
+	  <div class="container">
+	    <div class="row">
+	      <div class="work">
+	        <img src="http://cdn1.crumina.net/html-seosight/img/case1.jpg" alt="image" />
+	      </div>
+	      <div class="work">
+	        <img src="http://cdn1.crumina.net/html-seosight/img/case2.jpg" alt="image" />
+	      </div>
+	      <div class="work">
+	        <img src="http://cdn1.crumina.net/html-seosight/img/case3.jpg" alt="image" />
+	      </div>
+
+	      <div class="clearfix"></div>
+	    </div>
+	  </div>
+	</section>
+</body>
+</html>

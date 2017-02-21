@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<style type="text/css">
+	.container{
+	  width: 700px;
+	  margin: auto;
+	}
+	ul{
+	  margin: 0;              /*不需要margin*/
+	  padding-left: 0;        /*左側不需要留空*/
+	  list-style-type: none;  /*不需要ul的點*/
+	}
+	.clearfix{
+	  clear:both;
+	}
+	#logo{
+	  float:left;
+	}
+	nav{
+	  float:right;
+	}
+	nav li{
+	  /*display:inline;*//*預設block，使用inline只會有字被點到才有用*/
+	  float:left;/*right的話順序會顛倒*/
+	}
+	nav a{/*nav底下的a*/
+	  padding: 10px;/*padding 是本體 margin才是跟別的物件的距離*/
+	}
+</style>
+<body>
+
+<!--
+		id一個網頁只可以有一個，若有多個只會套用第一個
+		ol=order_list
+		ul=unorder_list
+-->
+
+<div id="header">
+  <div class="container">
+    <div id="logo">
+      <img src="http://danniepad.com/picture/I.PNG" alt="image" />
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Profile</a>
+        </li>
+        <li>
+          <a href="#">Post</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  <div class="clearfix"></div>
+  </div>
+
+  
+</div>
+
+</body>
+</html>

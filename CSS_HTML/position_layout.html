@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	body{
+	  background-color:#ccc;
+	}
+	.feature{
+	  padding: 20px;
+	  background-color: white;
+	  text-align:center;/*對孩子下指令不是直接對這個*/
+	}
+	.feature img{
+	  /*position: static;預設*/
+	  /*
+	  position:relative;
+	  top:;
+	  left:;
+	  right:;
+	  bottom:;
+	  相對位置 使用此方式只有img會移動
+	  */
+	  margin-top:-50px;/*全都可移動 因為margin是本體的一部份 所以把img向上拉其他也會一起*/
+	}
+</style>
+
+<body>
+	<div class="feature">
+	<img src="http://danniepad.com/picture/I.PNG" alt="img" />
+	  <h3>Organic Search</h3>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ratione placeat nulla.</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		.container{
+		  width: 600px; 			/*div 寬度*/
+		  margin:auto;				/*div 左右留空白對稱*/
+		}
+		.work{
+		  margin-bottom: 10px;
+		  margin-right:3%;			/*div 和下一個div空間*/
+		  background-color: #ccc;
+		  width: 30%;
+		  float:left;				/*div 左邊填滿先*/
+		}
+		.clearfix{
+		  clear:both;				/*結束填滿(float)*/
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+   	<div class="work">
+      kobe is great
+   	</div>
+   	<div class="work">
+       kobe is great
+   	</div>
+   	<div class="work">
+        kobe is great
+   	</div>
+   	<div class="work">
+        kobe is great
+   	</div>
+    <div class="work">
+          kobe is great
+    </div>
+    <div class="clearfix"></div>
+	
+</div>
+
+<div class="container">
+    wade is great wade is greatwade is great wade is great wade is great wais great wade is great
+</div>
+
+
+</body>
+</html>
